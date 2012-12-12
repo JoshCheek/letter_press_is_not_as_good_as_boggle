@@ -15,6 +15,7 @@ class LetterPressIsNotAsGoodAsBoggle
   end
 
   def initialize(all_words=LetterPressIsNotAsGoodAsBoggle.all_words, &definition)
+    @guesses = []
     self.searcher = searcher_for all_words
     instance_eval &definition
   end
@@ -27,9 +28,8 @@ class LetterPressIsNotAsGoodAsBoggle
     self.chars = chars
   end
 
-  def guesses(guesses=nil)
-    guesses && (@guesses = guesses)
-    @guesses
+  def guesses(guesses=[])
+    @guesses = guesses
   end
 
   def words
