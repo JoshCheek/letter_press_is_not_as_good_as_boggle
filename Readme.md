@@ -1,8 +1,8 @@
 LetterPress
 ===========
 
-There's this game for the iPhone called LetterPress.
-I can't play because I have an LG Chocolate 1.
+There's this game called LetterPress, it's sort of like Boggle, but less awesome.
+It's only for the iPhone, but I have a Chocolate 1, so I can't play.
 So... screw your fun!
 
 Install
@@ -23,9 +23,11 @@ LetterPress do
            x z u g o
            b i o g f]
 
+  # omit previous guesses from results
   guesses %w[groupie
              hogger]
 
+  # get the list of all known words that can be made on the board
   words.each { |word| puts word }
 end
 ```
