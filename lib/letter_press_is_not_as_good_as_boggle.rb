@@ -10,12 +10,11 @@ end
 class LetterPressIsNotAsGoodAsBoggle
   def self.all_words
     words = File.readlines File.expand_path '../../data/word_list', __FILE__
-    words.map &:chomp!
+    words.each &:chomp!
     words
   end
 
   def initialize(all_words=LetterPressIsNotAsGoodAsBoggle.all_words, &definition)
-    self.definition = definition
     self.searcher = searcher_for all_words
     instance_eval &definition
   end
@@ -49,7 +48,7 @@ class LetterPressIsNotAsGoodAsBoggle
 
   private
 
-  attr_accessor :chars, :searcher, :definition
+  attr_accessor :chars, :searcher
 
   def board_traverser
     @board_traverser ||= BoardTraverser.new chars
