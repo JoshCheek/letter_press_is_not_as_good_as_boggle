@@ -23,11 +23,11 @@ LetterPressIsNotAsGoodAsBoggle do
            x z u g o
            b i o g f]
 
-  # omit previous guesses from results
   guesses %w[groupie
              hogger]
 
   # get the list of all known words that can be made on the board
+  # unless hey have already been guessed
   words.each { |word| puts word }
 end
 ```

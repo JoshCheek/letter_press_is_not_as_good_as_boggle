@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift File.expand_path '../lib', __FILE__
-require 'letter_press_is_not_a_game_of_skill'
+require 'letter_press_is_not_as_good_as_boggle'
 
 LetterPressIsNotAsGoodAsBoggle do
   board %w[h z e o f
@@ -8,10 +8,10 @@ LetterPressIsNotAsGoodAsBoggle do
            x z u g o
            b i o g f]
 
-  # omit previous guesses from results
   guesses %w[groupie
              hogger]
 
   # get the list of all known words that can be made on the board
+  # unless hey have already been guessed
   words.each { |word| puts word }
 end
