@@ -1,6 +1,6 @@
-require 'letter_press/word_list/node'
+require 'letter_press_is_not_as_good_as_boggle/word_list/node'
 
-class LetterPress
+class LetterPressIsNotAsGoodAsBoggle
   class WordList
     attr_reader :root
 

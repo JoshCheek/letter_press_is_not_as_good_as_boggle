@@ -1,20 +1,20 @@
-require 'letter_press/board_traverser'
-require 'letter_press/word_list'
-require 'letter_press/word_list/searcher'
+require 'letter_press_is_not_as_good_as_boggle/board_traverser'
+require 'letter_press_is_not_as_good_as_boggle/word_list'
+require 'letter_press_is_not_as_good_as_boggle/word_list/searcher'
 require 'set'
 
-def LetterPress(&block)
-  LetterPress.new(&block).words
+def LetterPressIsNotAsGoodAsBoggle(&block)
+  LetterPressIsNotAsGoodAsBoggle.new(&block).words
 end
 
-class LetterPress
+class LetterPressIsNotAsGoodAsBoggle
   def self.all_words
     words = File.readlines File.expand_path '../../data/word_list', __FILE__
     words.map &:chomp!
     words
   end
 
-  def initialize(all_words=LetterPress.all_words, &definition)
+  def initialize(all_words=LetterPressIsNotAsGoodAsBoggle.all_words, &definition)
     self.definition = definition
     self.searcher = searcher_for all_words
     instance_eval &definition

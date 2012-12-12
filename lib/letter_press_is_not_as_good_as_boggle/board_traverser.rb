@@ -1,4 +1,4 @@
-class LetterPress
+class LetterPressIsNotAsGoodAsBoggle
   class BoardTraverser
 
     attr_accessor :characters

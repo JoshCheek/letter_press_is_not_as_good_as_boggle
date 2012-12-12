@@ -1,4 +1,4 @@
-class LetterPress
+class LetterPressIsNotAsGoodAsBoggle
   class WordList
     class Node
       attr_reader :parent

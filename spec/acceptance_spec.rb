@@ -7,7 +7,7 @@ describe 'some acceptance specs' do
     nonmatching = %w[x nek]
     all_words   = unguessed + guessed + nonmatching
 
-    letter_press = LetterPress.new all_words do
+    letter_press = LetterPressIsNotAsGoodAsBoggle.new all_words do
       board   %w[a b c d a]
       guesses %w[adc dab]
     end

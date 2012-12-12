@@ -1,6 +1,6 @@
-require 'letter_press/word_list/searcher'
+require 'letter_press_is_not_as_good_as_boggle/word_list/searcher'
 
-class LetterPress
+class LetterPressIsNotAsGoodAsBoggle
   describe WordList::Searcher do
     let(:word_list) { WordList.new }
     let(:searcher)  { WordList::Searcher.new word_list }

@@ -8,15 +8,15 @@ So... screw your fun!
 Install
 =======
 
-`$ gem install letter_press`
+`$ gem install letter_press_is_not_as_good_as_boggle`
 
 Example
 =======
 
 ```ruby
-require 'letter_press'
+require 'letter_press_is_not_as_good_as_boggle'
 
-LetterPress do
+LetterPressIsNotAsGoodAsBoggle do
   board %w[h z e o f
            h p h y i
            h w e b r
