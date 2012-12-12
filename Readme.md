@@ -1,5 +1,5 @@
-LetterPress
-===========
+LetterPressIsNotAsGoodAsBoggle
+==============================
 
 There's this game called LetterPress, it's sort of like Boggle, but less awesome.
 It's only for the iPhone, but I have a Chocolate 1, so I can't play.
@@ -32,8 +32,8 @@ LetterPressIsNotAsGoodAsBoggle do
 end
 ```
 
-License
-=======
+WTF Public License
+==================
 
     WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                        Version 2, December 2004
