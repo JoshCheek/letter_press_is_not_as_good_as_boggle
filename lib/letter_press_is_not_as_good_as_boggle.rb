@@ -9,9 +9,7 @@ end
 
 class LetterPressIsNotAsGoodAsBoggle
   def self.all_words
-    words = File.readlines File.expand_path '../../data/word_list', __FILE__
-    words.each &:chomp!
-    words
+    File.read(File.expand_path '../../data/word_list', __FILE__).split("\n")
   end
 
   def initialize(all_words=LetterPressIsNotAsGoodAsBoggle.all_words, &definition)
