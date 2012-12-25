@@ -9,13 +9,20 @@ class LetterPressIsNotAsGoodAsBoggle
         @node = word_list.root
       end
 
-      def down?(char)
+      def has_child?(char)
         @node.child? char
       end
 
-      def down(char)
-        raise NoPath, "No path #{@node.to_s << char}." unless down? char
+      def down_to(char)
+        raise NoPath, "No path #{@node.to_s << char}." unless has_child? char
         @node = @node.child char
+        if block_given?
+          begin
+            yield
+          ensure
+            up
+          end
+        end
       end
 
       def current
