@@ -28,8 +28,7 @@ class LetterPressIsNotAsGoodAsBoggle
         @node = new_node
       end
 
-      # rename to on_word?
-      def word?
+      def on_word?
         @node.word?
       end
     end

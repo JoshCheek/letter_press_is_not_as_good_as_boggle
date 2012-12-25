@@ -33,15 +33,15 @@ class LetterPressIsNotAsGoodAsBoggle
     end
 
     it 'knows when it is on a word in the word list' do
-      searcher.should_not be_word
+      searcher.should_not be_on_word
       searcher.down('t')
-      searcher.should_not be_word
+      searcher.should_not be_on_word
       searcher.down('h')
-      searcher.should_not be_word
+      searcher.should_not be_on_word
       searcher.down('e')
-      searcher.should_not be_word
+      searcher.should_not be_on_word
       searcher.down('n')
-      searcher.should be_word
+      searcher.should be_on_word
     end
 
     it 'knows what paths it can go down' do
@@ -50,19 +50,19 @@ class LetterPressIsNotAsGoodAsBoggle
     end
 
     example 'acceptance' do
-      searcher.should_not be_word
+      searcher.should_not be_on_word
       searcher.down 't'
-      searcher.should_not be_word
+      searcher.should_not be_on_word
       searcher.down 'h'
-      searcher.should_not be_word
+      searcher.should_not be_on_word
       searcher.down 'e'
-      searcher.should_not be_word
+      searcher.should_not be_on_word
       searcher.down 'n'
-      searcher.should be_word
+      searcher.should be_on_word
       searcher.current.should == 'then'
       searcher.up
       searcher.down 'y'
-      searcher.should be_word
+      searcher.should be_on_word
       searcher.current.should == 'they'
       searcher.up
       searcher.up

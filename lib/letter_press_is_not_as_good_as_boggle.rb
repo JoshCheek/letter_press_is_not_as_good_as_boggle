@@ -32,7 +32,7 @@ class LetterPressIsNotAsGoodAsBoggle
       board_traverser.each_with_recur do |word, char, recurser|
         next unless searcher.down? char
         searcher.down char
-        words << word if searcher.word? && !@guesses.include?(word)
+        words << word if searcher.on_word? && !@guesses.include?(word)
         recurser.call
         searcher.up
       end
