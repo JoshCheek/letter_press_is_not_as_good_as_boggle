@@ -14,12 +14,8 @@ class LetterPressIsNotAsGoodAsBoggle
 
   def initialize(all_words=LetterPressIsNotAsGoodAsBoggle.all_words, &definition)
     @guesses = []
-    self.searcher = searcher_for all_words
+    self.searcher = WordList::Searcher.new WordList.new all_words
     instance_eval &definition
-  end
-
-  def searcher_for(all_words)
-    WordList::Searcher.new WordList.new all_words
   end
 
   def board(chars)
@@ -40,7 +36,7 @@ class LetterPressIsNotAsGoodAsBoggle
         recurser.call
         searcher.up
       end
-      words.sort_by { |word| word.length }
+      words.sort_by &:length
     end
   end
 
@@ -52,4 +48,3 @@ class LetterPressIsNotAsGoodAsBoggle
     @board_traverser ||= BoardTraverser.new chars
   end
 end
-
