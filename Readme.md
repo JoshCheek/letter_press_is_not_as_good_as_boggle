@@ -2,8 +2,10 @@ LetterPressIsNotAsGoodAsBoggle
 ==============================
 
 There's this game called LetterPress, it's sort of like Boggle, but less awesome.
-It's only for the iPhone, but I have a Chocolate 1, so I can't play.
-So... screw your fun!
+But that doesn't mean that _you_ can't be awesome!
+
+![https://github.com/JoshCheek/letter_press_is_not_as_good_as_boggle/blob/master/data/screenshot.jpg](https://github.com/JoshCheek/letter_press_is_not_as_good_as_boggle/blob/master/data/screenshot.jpg)
+
 
 Install
 =======
@@ -35,7 +37,7 @@ end
 WTF Public License
 ==================
 
-    WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+    DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                        Version 2, December 2004
 
     Copyright (C) 2012 Josh Cheek <josh.cheek@gmail.com>
