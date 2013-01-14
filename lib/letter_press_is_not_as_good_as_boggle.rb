@@ -13,7 +13,7 @@ class LetterPressIsNotAsGoodAsBoggle
   end
 
   def initialize(all_words=LetterPressIsNotAsGoodAsBoggle.all_words, &definition)
-    @guesses = []
+    @guessed = []
     self.searcher = WordList::Searcher.new WordList.new all_words
     instance_eval &definition
   end
@@ -22,9 +22,10 @@ class LetterPressIsNotAsGoodAsBoggle
     self.chars = chars
   end
 
-  def guesses(guesses=[])
-    @guesses = guesses
+  def guessed(guessed=[])
+    @guessed = guessed
   end
+  alias guesses guessed # to maintain backwards compatibility
 
   def words
     @words ||= begin
@@ -32,7 +33,7 @@ class LetterPressIsNotAsGoodAsBoggle
       board_traverser.each_with_recur do |word, char, recurser|
         next unless searcher.has_child? char
         searcher.down_to char do
-          words << word if searcher.on_word? && !@guesses.include?(word)
+          words << word if searcher.on_word? && !@guessed.include?(word)
           recurser.call
         end
       end

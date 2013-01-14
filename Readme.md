@@ -25,7 +25,7 @@ LetterPressIsNotAsGoodAsBoggle do
            x z u g o
            b i o g f]
 
-  guesses %w[groupie
+  guessed %w[groupie
              hogger]
 
   # get the list of all known words that can be made on the board
