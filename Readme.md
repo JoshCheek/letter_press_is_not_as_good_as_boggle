@@ -4,7 +4,7 @@ LetterPressIsNotAsGoodAsBoggle
 There's this game called LetterPress, it's sort of like Boggle, but less awesome.
 But that doesn't mean that _you_ can't be awesome!
 
-![https://github.com/JoshCheek/letter_press_is_not_as_good_as_boggle/blob/master/data/screenshot.jpg](https://github.com/JoshCheek/letter_press_is_not_as_good_as_boggle/blob/master/data/screenshot.jpg)
+![screenshot](https://raw.github.com/JoshCheek/letter_press_is_not_as_good_as_boggle/master/data/screenshot.jpg)
 
 
 Install
